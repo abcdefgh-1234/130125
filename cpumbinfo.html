@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU and MotherBoard Information</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        #systemInfo {
+            white-space: pre-wrap;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <nav class="navbar">
+          <div class="logo">Device Inforamtion</div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./network.html">Network Info</a>
+            <a href="./allinfo.html">System Info</a>
+            <a href="./installedsw.html">Active Processes</a>
+            <a href="./patches.html">Patches Update</a>
+            <a href="./anti.html">Anti Virus Info</a>
+            <a href="./cpumbinfo.html">CPU Info</a>
+          </div>
+        </nav>
+    </header>
+
+    <h1>Baseboard Information</h1>
+    <table id="baseboardTable">
+        <thead>
+            <tr>
+                <!-- Headers will be dynamically inserted -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically inserted -->
+        </tbody>
+    </table>
+
+    <h1>Processor Inforamtion</h1>
+    <table id="processorTable">
+        <thead>
+            <tr>
+                <!-- Headers will be dynamically inserted -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically inserted -->
+        </tbody>
+    </table>
+
+    <script src="renderer.js"></script>
+
+</body>
+</html>
